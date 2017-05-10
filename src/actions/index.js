@@ -1,8 +1,10 @@
-import {googleAPISearchRequestGenerator} from './googleApiSearch'
+import {googleAPISearchRequestGenerator} from '../api/googleApiSearch'
 
 export const CHANGE_VIEW = 'CHANGE_VIEW'
-export const SEARCH_REQUEST = 'SEARCH_REQUEST'
-export const SEARCH_RESPONSE = 'SEARCH_RESPONSE'
+
+export const SEARCH_REQUESTED = 'SEARCH_REQUESTED'
+export const SEARCH_SUCCEEDED = 'SEARCH_SUCCEEDED'
+export const SEARCH_FAILED = 'SEARCH_FAILED'
 
 export function changeView (activeView) {
   return {
@@ -35,16 +37,5 @@ export function newSearch (
         startIndex
       }
     })
-
-    googleAPISearchRequestGenerator(searchTerm, searchType, resultsByPage, startIndex)
-      .then((response) => {
-        dispatch({
-          type: SEARCH_RESPONSE,
-          payload: {
-            totalItems: response.data.totalItems,
-            books: response.data.items
-          }
-        })
-      })
   }
 }

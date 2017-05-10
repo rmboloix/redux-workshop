@@ -6,15 +6,20 @@ import createSagaMiddleware from 'redux-saga'
 
 import App from './components/App.jsx'
 import reducers from './reducers'
+import rootSaga from './sagas'
 
 const sagaMiddleware = createSagaMiddleware()
 const createStoreWithMiddleware = applyMiddleware(sagaMiddleware)(createStore)
 
+sagaMiddleware.run(rootSaga)
+
+const store = createStoreWithMiddleware(
+  reducers,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
+
 ReactDOM.render(
-  <Provider store={
-    createStoreWithMiddleware(reducers,
-      window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-    )}>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('container')

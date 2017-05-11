@@ -12,6 +12,14 @@ export const searchTypes = {
   raw: 'raw'
 }
 
+const searchTypePrefixes = {
+  [searchTypes.author]: 'inauthor',
+  [searchTypes.publisher]: 'inpublisher',
+  [searchTypes.title]: 'intitle',
+  [searchTypes.isbn]: 'isbn',
+  [searchTypes.subject]: 'subject'
+}
+
 export function search (request) {
   try {
     let options = {
@@ -38,20 +46,11 @@ function generateQuery (criteria) {
 }
 
 function generateCondition (type, term) {
-  switch (type) {
-    case searchTypes.author:
-      return term.split(';').map((author) => { return 'inauthor:' + author }).join('+')
-    case searchTypes.publisher:
-      return 'inpublisher:' + term
-    case searchTypes.title:
-      return 'intitle:' + term
-    case searchTypes.isbn:
-      return 'isbn:' + term
-    case searchTypes.subject:
-      return 'subject:' + term
-    case searchTypes.raw:
-      return term
-    default:
-      throw new Error('Unknown search type')
+  if (type === searchTypes.raw) {
+    return term
   }
+  if (type === searchTypes.author) {
+    term = term.split(';').map((author) => { return ':' + author }).join('+')
+  }
+  return searchTypePrefixes[type] + ':' + term
 }

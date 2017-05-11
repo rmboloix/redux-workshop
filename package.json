@@ -50,12 +50,13 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
-    "babel-polyfill": "^6.16.0",
+    "babel-polyfill": "^6.23.0",
     "react": "^15.5.3",
     "react-dom": "^15.5.3",
     "react-redux": "^5.0.4",
     "react-router": "^2.0.1",
     "redux": "^3.0.4",
+    "redux-devtools-extension": "^2.13.2",
     "redux-saga": "^0.14.7"
   }
 }

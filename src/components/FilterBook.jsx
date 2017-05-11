@@ -3,17 +3,13 @@ import React, {Component} from 'react'
 export class FilterBook extends Component {
   constructor (props) {
     super(props)
-
-    this.state = {
-      query: ''
-    }
-
+    this.state = { value: '' }
     this.changeFilterText = this.changeFilterText.bind(this)
   }
 
   changeFilterText (event) {
     this.setState({
-      query: event.target.value
+      value: event.target.value
     })
   }
 
@@ -22,7 +18,7 @@ export class FilterBook extends Component {
       <div className='input-group'>
         <input type='text'
           className='form-control'
-          value={this.state.query}
+          value={this.state.value}
           onChange={this.changeFilterText}
           placeholder='Filter books' />
         <span className='input-group-btn'>

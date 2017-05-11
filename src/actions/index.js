@@ -1,5 +1,3 @@
-import {googleAPISearchRequestGenerator} from '../api/googleApiSearch'
-
 export const CHANGE_VIEW = 'CHANGE_VIEW'
 
 export const SEARCH_REQUESTED = 'SEARCH_REQUESTED'
@@ -13,29 +11,21 @@ export function changeView (activeView) {
   }
 }
 
-export function changePage (newPage) {
-  return (dispatch, getState) => {
-    let {searchTerm, searchType, resultsByPage} = getState().search.query
-    let startIndex = (newPage - 1) * resultsByPage
-    newSearch(searchTerm, searchType, resultsByPage, startIndex)(dispatch)
+export function newSearch (criteria, pageSize, startIndex = 0) {
+  return {
+    type: SEARCH_REQUESTED,
+    request: {
+      criteria,
+      pageSize,
+      startIndex
+    }
   }
 }
 
-export function newSearch (
-    searchTerm,
-    searchType,
-    resultsByPage,
-    startIndex = 0
-) {
-  return (dispatch) => {
-    dispatch({
-      type: SEARCH_REQUEST,
-      payload: {
-        searchTerm,
-        searchType,
-        resultsByPage,
-        startIndex
-      }
-    })
-  }
+export function changePage (currentRequest, newPage) {
+  return newSearch(
+    currentRequest.criteria,
+    currentRequest.pageSize,
+    (newPage - 1) * currentRequest.pageSize
+  )
 }

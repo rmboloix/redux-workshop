@@ -11,7 +11,7 @@ class Pagination extends Component {
   }
 
   changePage (newPage) {
-    this.props.changePage(newPage)
+    this.props.changePage(this.props.search.request, newPage)
   }
 
   render () {

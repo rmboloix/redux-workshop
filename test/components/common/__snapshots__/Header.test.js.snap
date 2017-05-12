@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="row header"
+>
+  <div
+    className="clearfix"
+  >
+    <div
+      className="col-md-4"
+    >
+      <img
+        alt="Atrapalo Tech library title"
+        height={50}
+        src="https://www.atrapalo.com/assets/common/logo-acento@2x.png"
+      />
+      <img
+        alt="Atrapalo Tech library logo"
+        height={50}
+        src="https://www.atrapalo.com/assets/common/a@2x.png"
+      />
+    </div>
+    <div
+      className="col-md-8"
+      style={
+        Object {
+          "margin": "0 auto",
+        }
+      }
+    >
+      <h1
+        className="right"
+        style={
+          Object {
+            "color": "white",
+            "textAlign": "right",
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        DT - TECH LIBRARY
+      </h1>
+      <span
+        style={
+          Object {
+            "color": "white",
+            "float": "right",
+          }
+        }
+      >
+        2017 M04 8, Sat
+      </span>
+    </div>
+  </div>
+</div>
+`;

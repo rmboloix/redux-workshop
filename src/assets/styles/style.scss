@@ -1,0 +1,57 @@
+.header  {
+    background-color: #de0000;
+    margin-bottom: 15px;
+}
+
+* {
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+.search-form div{
+    padding:0;
+    margin:0;
+}
+
+.search-form input , .search-form select{
+    border-radius:0;
+}
+
+.search-form button[type="submit"] {
+    background-color: #de0000;
+    border:0;
+    color:white;
+    border-radius: 0;
+}
+
+
+select.form-control {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    background: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:600;
+}
+
+.label {
+    padding: 4px;
+    display: block;
+    float: left;
+    clear: both;
+    margin: 1px;
+}
+
+.media-object {
+    margin-bottom: 4px;
+}
+
+.panel-filter {
+    margin: 10px -5px;
+}

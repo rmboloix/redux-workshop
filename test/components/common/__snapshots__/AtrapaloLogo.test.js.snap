@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="col-md-4"
+>
+  <img
+    alt="Atrapalo Tech library title"
+    height={50}
+    src="https://www.atrapalo.com/assets/common/logo-acento@2x.png"
+  />
+  <img
+    alt="Atrapalo Tech library logo"
+    height={50}
+    src="https://www.atrapalo.com/assets/common/a@2x.png"
+  />
+</div>
+`;

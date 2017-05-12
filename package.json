@@ -46,7 +46,8 @@
     "url-loader": "^0.5.7",
     "webpack": "^2.2.0",
     "webpack-dashboard": "^0.2.0",
-    "webpack-dev-server": "^2.4.4"
+    "webpack-dev-server": "^2.4.4",
+    "react-test-renderer": "^15.5.4"
   },
   "dependencies": {
     "axios": "^0.16.1",

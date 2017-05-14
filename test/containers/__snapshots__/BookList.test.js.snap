@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookList component should render a list of books 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-12"
+  >
+    <div
+      className="col-md-4 col-sm-6"
+      style={
+        Object {
+          "height": 400,
+          "overflow": "hidden",
+          "padding": 10,
+        }
+      }
+    >
+      <div
+        className="media"
+      >
+        <div
+          className="media-left "
+        >
+          <a
+            href="http://books.google.es/books?id=L08IrgEACAAJ&dq=%22docker%22+subject:Computers&hl=&cd=10&source=gbs_api"
+            target="_blank"
+          >
+            <img
+              alt="Docker Containers"
+              className="media-object img-thumbnail"
+              src="https://books.google.com/books/content?id=L08IrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            />
+          </a>
+          <div>
+            <span
+              className="label label-default"
+            >
+              350
+               pages
+            </span>
+            <span
+              className="label label-default"
+            >
+              2015-09-01
+            </span>
+            <span
+              className="label label-default"
+            >
+              ISBN 10
+               : 
+              013413656X
+            </span>
+            <span
+              className="label label-default"
+            >
+              ISBN 13
+               : 
+              9780134136561
+            </span>
+            <span
+              className="label label-primary"
+            >
+              Christopher Negus
+            </span>
+          </div>
+        </div>
+        <div
+          className="media-body "
+        >
+          <div>
+            <h4
+              className="media-heading"
+            >
+              Docker Containers
+            </h4>
+            <span
+              className="label label-success"
+            >
+              Computers
+            </span>
+             
+            -
+             
+            Addison-Wesley Professional
+            <p
+              style={
+                Object {
+                  "fontSize": 12,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              The Practical Guide to Running Docker on Linux Systems or Cloud Environments Whether on your laptop or a remote cloud, Docker can transform how you create, test, deploy, and manage your most critical applications. In Doc ker Containers , Christopher Negus helps you master Docker containerization from the ground up. You'll start out running a few Docker container images in Ubuntu, Fedora, RHEL, CoreOS, or Project Atomic. By the time you've finished, you'll be deploying enterprise-quality, multi-container Kubernetes setups in modern Linux and cloud environments. Writing for system administrators, software developers, and technology enthusiasts, Negus touches on every aspect of working with Docker: setting up containerized applications, working with both individual and multiple containers, ru...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="text-center col-md-12"
+  >
+    <nav
+      aria-label="Search navigation"
+    >
+      <ul
+        className="pagination"
+      >
+        <li>
+          <a
+            aria-label="Next"
+            href="#"
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden="true"
+            >
+              Next »
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`BookList component should render empty list of books 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-12"
+  />
+  <div
+    className="text-center col-md-12"
+  />
+</div>
+`;

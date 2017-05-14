@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`viewSelector component should render default viewSelector 1`] = `
+<div
+  className="btn-group"
+  role="group"
+>
+  <button
+    className="btn btn-default active"
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="glyphicon glyphicon-th-large"
+    />
+  </button>
+  <button
+    className="btn btn-default "
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="glyphicon glyphicon-th"
+    />
+  </button>
+  <button
+    className="btn btn-default "
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="glyphicon glyphicon-th-list"
+    />
+  </button>
+</div>
+`;
+
+exports[`viewSelector component should render default viewSelector 2`] = `
+<div
+  className="btn-group"
+  role="group"
+>
+  <button
+    className="btn btn-default "
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="glyphicon glyphicon-th-large"
+    />
+  </button>
+  <button
+    className="btn btn-default active"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="glyphicon glyphicon-th"
+    />
+  </button>
+  <button
+    className="btn btn-default "
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="glyphicon glyphicon-th-list"
+    />
+  </button>
+</div>
+`;
+
+exports[`viewSelector component should render default viewSelector 3`] = `
+<div
+  className="btn-group"
+  role="group"
+>
+  <button
+    className="btn btn-default "
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="glyphicon glyphicon-th-large"
+    />
+  </button>
+  <button
+    className="btn btn-default "
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="glyphicon glyphicon-th"
+    />
+  </button>
+  <button
+    className="btn btn-default active"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="glyphicon glyphicon-th-list"
+    />
+  </button>
+</div>
+`;

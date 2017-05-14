@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchHistory component should render empty list 1`] = `
+<div
+  className="panel-filter panel panel-default"
+>
+  <div
+    className="panel-heading"
+  >
+    <h3
+      className="panel-title"
+    >
+      Search History
+    </h3>
+  </div>
+  <div
+    className="panel-body"
+  >
+    <div
+      className="list-group"
+    />
+  </div>
+</div>
+`;
+
+exports[`SearchHistory component should render history list 1`] = `
+<div
+  className="panel-filter panel panel-default"
+>
+  <div
+    className="panel-heading"
+  >
+    <h3
+      className="panel-title"
+    >
+      Search History
+    </h3>
+  </div>
+  <div
+    className="panel-body"
+  >
+    <div
+      className="list-group"
+    >
+      <button
+        className="list-group-item"
+        onClick={[Function]}
+        type="button"
+      >
+        docker
+         
+        <span
+          className="badge"
+        >
+          title
+        </span>
+      </button>
+      <button
+        className="list-group-item"
+        onClick={[Function]}
+        type="button"
+      >
+        kubernetes
+         
+        <span
+          className="badge"
+        >
+          title
+        </span>
+      </button>
+      <button
+        className="list-group-item"
+        onClick={[Function]}
+        type="button"
+      >
+        robert c. martin
+         
+        <span
+          className="badge"
+        >
+          author
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

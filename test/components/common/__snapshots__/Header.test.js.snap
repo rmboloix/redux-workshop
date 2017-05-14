@@ -1,15 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="row header"
->
+<div>
   <div
-    className="clearfix"
+    className="col-md-4 col-sm-4 hidden-xs"
   >
-    <div
-      className="col-md-4"
-    >
+    <div>
       <img
         alt="Atrapalo Tech library title"
         height={50}
@@ -21,37 +17,37 @@ exports[`renders correctly 1`] = `
         src="https://www.atrapalo.com/assets/common/a@2x.png"
       />
     </div>
-    <div
-      className="col-md-8"
+  </div>
+  <div
+    className="col-md-8 col-sm-8 col-xs-12"
+    style={
+      Object {
+        "margin": "0 auto",
+      }
+    }
+  >
+    <h1
+      className="right"
       style={
         Object {
-          "margin": "0 auto",
+          "color": "white",
+          "textAlign": "right",
+          "verticalAlign": "middle",
         }
       }
     >
-      <h1
-        className="right"
-        style={
-          Object {
-            "color": "white",
-            "textAlign": "right",
-            "verticalAlign": "middle",
-          }
+      DT - TECH LIBRARY
+    </h1>
+    <span
+      style={
+        Object {
+          "color": "white",
+          "float": "right",
         }
-      >
-        DT - TECH LIBRARY
-      </h1>
-      <span
-        style={
-          Object {
-            "color": "white",
-            "float": "right",
-          }
-        }
-      >
-        2017 M04 8, Sat
-      </span>
-    </div>
+      }
+    >
+      2017 M04 8, Sat
+    </span>
   </div>
 </div>
 `;

@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination component should render correctly on first page 1`] = `
+<nav
+  aria-label="Search navigation"
+>
+  <ul
+    className="pagination"
+  >
+    <li>
+      <a
+        aria-label="Next"
+        href="#"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden="true"
+        >
+          Next »
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Pagination component should render correctly on last page 1`] = `
+<nav
+  aria-label="Search navigation"
+>
+  <ul
+    className="pagination"
+  >
+    <li>
+      <a
+        aria-label="Previous"
+        href="#"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden="true"
+        >
+          « Prev
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Pagination component should render correctly on middle page 1`] = `
+<nav
+  aria-label="Search navigation"
+>
+  <ul
+    className="pagination"
+  >
+    <li>
+      <a
+        aria-label="Previous"
+        href="#"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden="true"
+        >
+          « Prev
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        aria-label="Next"
+        href="#"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden="true"
+        >
+          Next »
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

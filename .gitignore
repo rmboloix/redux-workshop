@@ -1,8 +1,9 @@
-/node_modules
-npm-debug.log
-
 # IntelliJ
 *.iml
 /.idea
 
 dist/*
+/node_modules
+bundle.js
+npm-debug.log
+/coverage

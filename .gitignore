@@ -1,9 +1,10 @@
-/node_modules
-bundle.js
-npm-debug.log
-
 # IntelliJ
 *.iml
 /.idea
-/coverage/
-public/dist
+
+dist/*
+/node_modules
+bundle.js
+npm-debug.log
+/coverage
+.DS_Store

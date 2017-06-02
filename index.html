@@ -26,7 +26,7 @@
                                                                      src="https://www.atrapalo.com/assets/common/a@2x.png"
                                                                      alt="Atrapalo Tech library logo"></div>
                 </div>
-                <div class="col-md-8 col-sm-8 col-xs-12" style="margin: 0px auto;"><h1 class="right"
+                <div class="col-md-8 col-sm-8 col-xs-12" style="margin: 0 auto;"><h1 class="right"
                                                                                        style="text-align: right; vertical-align: middle; color: white;">
                     DT - TECH LIBRARY</h1><span style="float: right; color: white;">sábado, 27 de mayo de 2017</span>
                 </div>
@@ -35,21 +35,25 @@
         <div class="google-search row">
             <div class="col-md-12">
                 <form class="row search-form">
-                    <div class="col-md-2 col-sm-2 col-xs-8"><select class="form-control"
-                                                                    aria-label="query type selector">
-                        <option value="title">Title</option>
-                        <option value="author">Author</option>
-                        <option value="publisher">Publisher</option>
-                        <option value="byquery">ByQuery</option>
-                        <option value="isbn">ISBN</option>
-                    </select></div>
-                    <div class="col-md-1 col-sm-1 col-xs-4"><select class="form-control"
-                                                                    aria-label="max results number">
-                        <option value="20">20</option>
-                        <option value="40">40</option>
-                    </select></div>
-                    <div class="col-md-7 col-sm-7 col-xs-12"><input type="text" class="form-control" value=""
-                                                                    aria-label="search term" placeholder="Clean Code">
+                    <div class="col-md-2 col-sm-2 col-xs-8">
+                        <select class="form-control"
+                                aria-label="query type selector">
+                            <option value="title">Title</option>
+                            <option value="author">Author</option>
+                            <option value="publisher">Publisher</option>
+                            <option value="byquery">ByQuery</option>
+                            <option value="isbn">ISBN</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-4">
+                        <select class="form-control"
+                                aria-label="max results number">
+                            <option value="20">20</option>
+                            <option value="40">40</option>
+                        </select>
+                    </div>
+                    <div class="col-md-7 col-sm-7 col-xs-12">
+                        <input type="text" class="form-control" value="" aria-label="search term" placeholder="Clean Code">
                     </div>
                     <div class="col-md-2 col-sm-2 col-xs-12">
                         <button class="btn form-control" type="submit">Search</button>
@@ -71,8 +75,7 @@
                                         class="glyphicon glyphicon-th-list"></span></button>
                             </div>
                         </div>
-                        <div class="panel-body"><!-- react-text: 42 -->Total results <!-- /react-text --><span
-                                class="label label-primary">225</span></div>
+                        <div class="panel-body">Total results<span class="label label-primary">0</span></div>
                     </div>
                 </div>
             </div>
@@ -80,5 +83,6 @@
     </div>
 </div>
 <script src="public/dist/bundle.js"></script>
+<script src="public/analytics.js" async></script>
 </body>
 </html>

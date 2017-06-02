@@ -1,6 +1,7 @@
 import React from 'react';
 import Col from 'react-bootstrap/lib/Col';
 import AtrapaloLogo from './AtrapaloLogo';
+import DateHeader from '../../../src/components/common/DateHeader';
 
 const Header = () => {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -18,7 +19,7 @@ const Header = () => {
         >
           DT - TECH LIBRARY
         </h1>
-        <span style={{ float: 'right', color: 'white' }}>{ new Date().toLocaleDateString('es-ES', options) }</span>
+      <DateHeader />
       </Col>
     </div>
   );

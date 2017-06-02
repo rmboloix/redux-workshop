@@ -41,7 +41,10 @@
     "babel-preset-stage-1": "^6.1.18",
     "bootstrap": "^3.3.7",
     "compression": "^1.6.2",
+    "css-loader": "^0.28.4",
     "express": "^4.15.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "react": "^15.5.3",
@@ -51,8 +54,10 @@
     "react-router": "^2.0.1",
     "redux": "^3.0.4",
     "redux-thunk": "^2.2.0",
+    "style-loader": "^0.18.1",
     "webpack": "^2.5.1",
-    "webpack-bundle-analyzer": "^2.8.2"
+    "webpack-bundle-analyzer": "^2.8.2",
+    "webpack-combine-loaders": "^2.0.3"
   },
   "jest": {
     "verbose": true,

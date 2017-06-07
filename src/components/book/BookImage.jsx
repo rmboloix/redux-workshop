@@ -20,7 +20,7 @@ const BookImage = ({ link, image, alt }) => {
 };
 
 BookImage.defaultProps = {
-  image: '/noimage.png',
+  image: '/public/noimage.png',
   link: '#',
 };
 

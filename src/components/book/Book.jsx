@@ -19,7 +19,7 @@ class Book extends Component {
     const bookImage = this.props.activeView !== 'list-view' && (
       <BookImage
         link={info.previewLink ? info.previewLink : '#'}
-        image={info.imageLinks ? info.imageLinks.thumbnail : '/noimage.png'}
+        image={info.imageLinks ? info.imageLinks.thumbnail : '/public/noimage.png'}
         alt={info.title}
       />
       );
